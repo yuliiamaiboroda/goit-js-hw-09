@@ -22,6 +22,7 @@ allLabelsEl.forEach(el => el.style.cssText = 'font-size: 25px; color: teal');
 allValueEl.forEach(el => el.style.cssText = 'font-size: 35px; color: teal');
 fieldDivEl.forEach(el => el.style.cssText ='display: flex; flex-direction:column;  align-items:center')
 
+buttonStartEl.setAttribute('disabled', 'true');
 
 let startTimer = 0;
 const options = {
@@ -116,6 +117,7 @@ const timer = {
         clearInterval(timeId);
     }
 }
+
 buttonStartEl.addEventListener('click', startTimerHandler);
 function startTimerHandler() {
     timer.start()

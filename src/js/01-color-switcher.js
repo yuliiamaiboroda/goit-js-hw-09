@@ -21,7 +21,7 @@ function getRandomHexColor() {
 
   function stopChangeColorHandler(){
     clearInterval(timerId);
-    bodeEl.style.backgroundColor = 'white';
+    
     btnStartChangeColorEl.removeAttribute('disabled')
     btnStopChangeColorEl.setAttribute('disabled', 'true');
   };

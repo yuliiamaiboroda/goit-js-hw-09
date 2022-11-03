@@ -38,6 +38,11 @@ const options = {
             buttonStartEl.setAttribute('disabled', 'true');
             Notiflix.Report.failure('WRONG DATE', 'Please choose a date in the future', 'Try again');
             
+            secondsValueEl.textContent = '00';
+            minutesValueEl.textContent = '00';
+            hoursValueEl.textContent = '00';
+            dayValueEl.textContent = '00';
+            timer.stop();
         } else{
             buttonStartEl.removeAttribute('disabled');
             
